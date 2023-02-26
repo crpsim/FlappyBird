@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <div class="title">
+            <h1>
+                <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span><span class="space"></span><span>t</span><span>o</span><span class="space"> </span><span>F</span><span>l</span><span>a</span><span>p</span><span>p</span><span>y</span><span class="space"></span><span>B</span><span>i</span><span>r</span><span>d</span>
+            </h1></div>
+        <button onclick="startGame()">Start</button>
+    </div>
+    <div id="game" onclick="jump()">
+        <div id="tube"></div>
+        <div id="hole"></div>
+        <div id="bird"><img src="bird_size.png" alt=""></div>
+    </div>
+    <div id="scoreboard">Score : <span id="score">0</span></div>
+    <div id="game-over-screen">
+        <div class="lose">
+            <h1>
+                <span>G</span><span>a</span><span>m</span><span>e</span><span class="space"> </span><span>O</span><span>v</span><span>e</span><span>r</span>
+            </h1></div>
+        <p>Your Score: <span id="final-score">0</span></p>
+        <button id="restart-btn">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
